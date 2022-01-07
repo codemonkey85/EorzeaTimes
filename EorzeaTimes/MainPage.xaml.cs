@@ -5,7 +5,7 @@ namespace EorzeaTimes;
 
 public partial class MainPage : ContentPage
 {
-    private EorzeaTimeViewModel eorzeaTimeViewModel = new();
+    private readonly EorzeaTimeViewModel eorzeaTimeViewModel = new();
     private readonly Timer timer = new(1000D);
 
     public MainPage()
