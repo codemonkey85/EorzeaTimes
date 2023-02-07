@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eorzea.Rcl", "Eorzea.Rcl\Eo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eorzea.Wasm", "Eorzea.Wasm\Eorzea.Wasm.csproj", "{91102803-AB44-499A-9B2F-88FF64B99730}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eorzea.Mobile", "Eorzea.Mobile\Eorzea.Mobile.csproj", "{E99027A5-A3A8-4DC8-8527-C368657DE699}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{91102803-AB44-499A-9B2F-88FF64B99730}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91102803-AB44-499A-9B2F-88FF64B99730}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91102803-AB44-499A-9B2F-88FF64B99730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99027A5-A3A8-4DC8-8527-C368657DE699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99027A5-A3A8-4DC8-8527-C368657DE699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99027A5-A3A8-4DC8-8527-C368657DE699}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E99027A5-A3A8-4DC8-8527-C368657DE699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99027A5-A3A8-4DC8-8527-C368657DE699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99027A5-A3A8-4DC8-8527-C368657DE699}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
