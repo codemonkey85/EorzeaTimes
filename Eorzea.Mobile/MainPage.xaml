@@ -7,7 +7,7 @@
              Title="{Binding Title}">
 
     <VerticalStackLayout>
-        <Label Text="{Binding EorzeaTime}" />
+        <Label Text="{Binding EorzeaTimeString}" />
     </VerticalStackLayout>
 
 </ContentPage>

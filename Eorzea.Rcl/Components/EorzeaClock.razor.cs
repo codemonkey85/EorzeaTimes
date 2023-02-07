@@ -4,6 +4,8 @@ public partial class EorzeaClock : IDisposable
 {
     private DateTime EorzeaTime { get; set; }
 
+    private string EorzeaTimeString => EorzeaTime.ToString(Constants.DefaultTimeDisplayFormat);
+
     private Timer? timer;
 
     protected override void OnInitialized()
@@ -18,8 +20,5 @@ public partial class EorzeaClock : IDisposable
         InvokeAsync(StateHasChanged);
     }
 
-    public void Dispose()
-    {
-        timer?.Dispose();
-    }
+    public void Dispose() => timer?.Dispose();
 }

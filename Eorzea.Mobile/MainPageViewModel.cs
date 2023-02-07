@@ -6,23 +6,20 @@ public partial class MainPageViewModel : ObservableObject, IDisposable
     private string title;
 
     [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(EorzeaTimeString))]
     private DateTime eorzeaTime;
+
+    public string EorzeaTimeString =>
+        EorzeaTime.ToString(Constants.DefaultTimeDisplayFormat);
 
     private Timer timer;
 
-    public MainPageViewModel()
-    {
-        timer = new Timer(UpdateEorzeaTime, null, 0, 1000);
-    }
+    public MainPageViewModel() =>
+        timer = new Timer(Tick, null, 0, 1000);
 
-    [RelayCommand]
-    private void UpdateEorzeaTime(object _)
-    {
+    private void Tick(object _) =>
         EorzeaTime = DateTime.Now.ToEorzeaTime();
-    }
 
-    public void Dispose()
-    {
+    public void Dispose() =>
         timer?.Dispose();
-    }
 }
