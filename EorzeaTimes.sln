@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EorzeaTimes", "EorzeaTimes\EorzeaTimes.csproj", "{3D6C8CE5-AE44-4734-B78F-40B4FA200AE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eorzea.Shared", "Eorzea.Shared\Eorzea.Shared.csproj", "{6F486A83-F193-4D6D-8DEA-4FB0ED90820F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F8580C38-A2DD-4AD0-9C7F-2C87FBD517DC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eorzea.Rcl", "Eorzea.Rcl\Eorzea.Rcl.csproj", "{5A6659C8-4225-45EA-A912-5D9891481A44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eorzea.Wasm", "Eorzea.Wasm\Eorzea.Wasm.csproj", "{91102803-AB44-499A-9B2F-88FF64B99730}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +21,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3D6C8CE5-AE44-4734-B78F-40B4FA200AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D6C8CE5-AE44-4734-B78F-40B4FA200AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D6C8CE5-AE44-4734-B78F-40B4FA200AE7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{3D6C8CE5-AE44-4734-B78F-40B4FA200AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D6C8CE5-AE44-4734-B78F-40B4FA200AE7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D6C8CE5-AE44-4734-B78F-40B4FA200AE7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6F486A83-F193-4D6D-8DEA-4FB0ED90820F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F486A83-F193-4D6D-8DEA-4FB0ED90820F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F486A83-F193-4D6D-8DEA-4FB0ED90820F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F486A83-F193-4D6D-8DEA-4FB0ED90820F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A6659C8-4225-45EA-A912-5D9891481A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6659C8-4225-45EA-A912-5D9891481A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6659C8-4225-45EA-A912-5D9891481A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6659C8-4225-45EA-A912-5D9891481A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91102803-AB44-499A-9B2F-88FF64B99730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91102803-AB44-499A-9B2F-88FF64B99730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91102803-AB44-499A-9B2F-88FF64B99730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91102803-AB44-499A-9B2F-88FF64B99730}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
