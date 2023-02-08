@@ -4,9 +4,13 @@ public partial class EorzeaClock : IDisposable
 {
     private DateTime EorzeaTime { get; set; }
 
-    private string EorzeaTimeString => EorzeaTime.ToString(Constants.DefaultTimeDisplayFormat);
+    private string EorzeaTimeString =>
+        EorzeaTime.ToString(
+            UseMilitaryTime ? Constants.MilitaryTimeDisplayFormat : Constants.DefaultTimeDisplayFormat);
 
     private Timer? timer;
+
+    private bool UseMilitaryTime { get; set; } = false;
 
     protected override void OnInitialized()
     {

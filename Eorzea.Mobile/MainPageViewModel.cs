@@ -12,9 +12,13 @@ public partial class MainPageViewModel : ObservableObject, IDisposable
     private DateTime eorzeaTime;
 
     public string EorzeaTimeString =>
-        EorzeaTime.ToString(Constants.DefaultTimeDisplayFormat);
+        EorzeaTime.ToString(UseMilitaryTime ? Constants.MilitaryTimeDisplayFormat : Constants.DefaultTimeDisplayFormat);
 
     private Timer timer;
+
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(EorzeaTimeString))]
+    private bool useMilitaryTime;
 
     public MainPageViewModel() =>
         timer = new Timer(Tick, null, 0, 1000);

@@ -1,1 +1,15 @@
-﻿@EorzeaTimeString
+﻿<div>
+    <div>
+        The current time in Eorzea is:
+        <br />
+        @EorzeaTimeString
+    </div>
+    <div>
+        <label for="UseMilitaryTimeCheckBox">
+            Use 24-hour time
+        </label>
+        <input id="UseMilitaryTimeCheckBox"
+               type="checkbox"
+               @bind="UseMilitaryTime" />
+    </div>
+</div>

@@ -7,7 +7,20 @@
              Title="{Binding Title}">
 
     <VerticalStackLayout>
-        <Label Text="{Binding EorzeaTimeString}" />
+        <VerticalStackLayout Spacing="5">
+            <Label Text="The current time in Eorzea is:"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center" />
+            <Label Text="{Binding EorzeaTimeString}" 
+                   VerticalOptions="Center" 
+                   VerticalTextAlignment="Center" />
+        </VerticalStackLayout>
+        <HorizontalStackLayout Spacing="5">
+            <Label Text="Use 24-hour time"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center" />
+            <CheckBox IsChecked="{Binding UseMilitaryTime}" />
+        </HorizontalStackLayout>
         <Button x:Name="TestButton"
                 IsVisible="false"
                 Text="Test Notification" 
