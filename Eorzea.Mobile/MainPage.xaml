@@ -8,6 +8,10 @@
 
     <VerticalStackLayout>
         <Label Text="{Binding EorzeaTimeString}" />
+        <Button x:Name="TestButton"
+                IsVisible="false"
+                Text="Test Notification" 
+                Command="{Binding TestNotificationCommand}" />
     </VerticalStackLayout>
 
 </ContentPage>
