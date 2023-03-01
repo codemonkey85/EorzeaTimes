@@ -9,9 +9,11 @@
     <VerticalStackLayout>
         <VerticalStackLayout Spacing="5">
             <Label Text="The current time in Eorzea is:"
+                   FontSize="Header"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center" />
             <Label Text="{Binding EorzeaTimeString}" 
+                   FontSize="Large"
                    VerticalOptions="Center" 
                    VerticalTextAlignment="Center" />
         </VerticalStackLayout>
