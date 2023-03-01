@@ -1,1 +1,14 @@
-﻿
+﻿.clock-container {
+    margin: 5px;
+    padding: 5px;
+}
+
+.time-container {
+    margin: 5px;
+    padding: 5px;
+}
+
+.controls-container {
+    margin: 5px;
+    padding: 5px;
+}
