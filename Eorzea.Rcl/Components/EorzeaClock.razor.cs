@@ -12,6 +12,8 @@ public partial class EorzeaClock : IDisposable
 
     private bool UseMilitaryTime { get; set; } = false;
 
+    private bool ShowTimeInTitle { get; set; } = true;
+
     protected override void OnInitialized()
     {
         base.OnInitialized();
