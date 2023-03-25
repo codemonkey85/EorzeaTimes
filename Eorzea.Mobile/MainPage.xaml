@@ -8,7 +8,7 @@
 
     <VerticalStackLayout>
         <VerticalStackLayout Spacing="5">
-            <Label Text="The current time in Eorzea is:"
+            <Label Text="Eorzea time:"
                    FontSize="Header"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center" />
