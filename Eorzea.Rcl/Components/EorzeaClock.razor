@@ -2,28 +2,18 @@
     @(ShowTimeInTitle ? $"ET: {EorzeaTimeString}" : "Eorzea Time")
 </PageTitle>
 
-<div class="clock-container">
-    <div class="time-container">
-        <h3>The current time in Eorzea is:</h3>
-        <br />
-        <h2>@EorzeaTimeString</h2>
-    </div>
-    <div class="controls-container">
-        <div>
-            <label for="UseMilitaryTimeCheckBox">
-                Use 24-hour time
-            </label>
-            <input id="UseMilitaryTimeCheckBox"
-                   type="checkbox"
-                   @bind="UseMilitaryTime" />
-        </div>
-        <div>
-            <label for="ShowTimeInTitleCheckbox">
-                Show time in title
-            </label>
-            <input id="ShowTimeInTitleCheckbox"
-                   type="checkbox"
-                   @bind="ShowTimeInTitle" />
-        </div>
-    </div>
-</div>
+<MudText Typo="@Typo.h3">
+    Eorzea time:
+</MudText>
+
+<MudText Typo="@Typo.h3">
+    @EorzeaTimeString
+</MudText>
+
+<MudSwitch @bind-Checked="@UseMilitaryTime"
+           Label="Use 24-hour time"
+           Color="Color.Primary" />
+
+<MudSwitch @bind-Checked="@ShowTimeInTitle"
+           Label="Show time in title"
+           Color="Color.Primary" />
