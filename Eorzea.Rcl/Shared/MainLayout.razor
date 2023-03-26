@@ -1,6 +1,7 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider />
+<MudThemeProvider @ref="@mudThemeProvider"
+                  @bind-IsDarkMode="@isDarkMode" />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
@@ -9,6 +10,10 @@
         <MudText>
             Eorzea Times
         </MudText>
+        <MudSpacer />
+        <MudSwitch @bind-Checked="@isDarkMode"
+                   Color="Color.Primary"
+                   Label="@(isDarkMode ? "Dark" : "Light")" />
     </MudAppBar>
     <MudContainer MaxWidth="MaxWidth.False">
         <MudMainContent>
