@@ -17,7 +17,7 @@ public partial class EorzeaClock : IDisposable
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        timer = new Timer(Tick, null, 0, 1000);
+        timer = new Timer(Tick, null, 0, Constants.TimeRefreshInterval);
     }
 
     private void Tick(object? _)

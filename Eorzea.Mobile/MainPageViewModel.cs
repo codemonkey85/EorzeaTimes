@@ -21,7 +21,7 @@ public partial class MainPageViewModel : ObservableObject, IDisposable
     private bool useMilitaryTime;
 
     public MainPageViewModel() =>
-        timer = new Timer(Tick, null, 0, 1000);
+        timer = new Timer(Tick, null, 0, Constants.TimeRefreshInterval);
 
     private void Tick(object _) =>
         EorzeaTime = DateTime.Now.ToEorzeaTime();
