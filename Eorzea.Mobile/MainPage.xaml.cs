@@ -8,7 +8,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         BindingContext = ViewModel = viewModel;
-#if ANDROID || IOS
+#if DEBUG && (ANDROID || IOS)
         TestButton.IsVisible = true;
 #endif
     }
