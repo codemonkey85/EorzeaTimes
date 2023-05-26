@@ -20,8 +20,19 @@ public partial class MainPageViewModel : ObservableObject, IDisposable
     [NotifyPropertyChangedFor(nameof(EorzeaTimeString))]
     private bool useMilitaryTime;
 
-    public MainPageViewModel() =>
+    partial void OnUseMilitaryTimeChanged(bool oldValue, bool newValue)
+    {
+        if (oldValue != newValue)
+        {
+            Preferences.Default.Set(nameof(UseMilitaryTime), newValue);
+        }
+    }
+
+    public MainPageViewModel()
+    {
         timer = new Timer(Tick, null, 0, Constants.TimeRefreshInterval);
+        UseMilitaryTime = Preferences.Default.Get(nameof(UseMilitaryTime), false);
+    }
 
     private void Tick(object _) =>
         EorzeaTime = DateTime.Now.ToEorzeaTime();
