@@ -2,22 +2,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Eorzea.Mobile"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              x:DataType="local:MainPageViewModel"
              x:Class="Eorzea.Mobile.MainPage"
+             ios:Page.UseSafeArea="True"
              Title="{Binding Title}">
 
-    <VerticalStackLayout>
-        <VerticalStackLayout Spacing="5">
+    <VerticalStackLayout Padding="5"
+                         Spacing="5">
+        <VerticalStackLayout Spacing="5"
+                             HorizontalOptions="Center">
             <Label Text="Eorzea time:"
                    FontSize="Header"
                    VerticalOptions="Center"
-                   VerticalTextAlignment="Center" />
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="Center" />
             <Label Text="{Binding EorzeaTimeString}" 
                    FontSize="Large"
                    VerticalOptions="Center" 
-                   VerticalTextAlignment="Center" />
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="Center" />
         </VerticalStackLayout>
-        <HorizontalStackLayout Spacing="5">
+        <HorizontalStackLayout Spacing="5" 
+                               HorizontalOptions="Center">
             <Label Text="Use 24-hour time"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center" />
