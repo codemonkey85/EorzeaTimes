@@ -38,7 +38,15 @@ public partial class MainPageViewModel : ObservableObject, IDisposable
         EorzeaTime = DateTime.Now.ToEorzeaTime();
 
     [RelayCommand]
+#pragma warning disable CA1822 // Mark members as static
+#if WINDOWS || MACCATALYST || TIZEN
+#pragma warning disable CS1998
+#endif
     private async Task TestNotificationAsync()
+#if WINDOWS || MACCATALYST || TIZEN
+#pragma warning restore CS1998
+#endif
+#pragma warning restore CA1822 // Mark members as static
     {
 #if ANDROID || IOS
         if (await LocalNotificationCenter.Current.AreNotificationsEnabled() is not true)
