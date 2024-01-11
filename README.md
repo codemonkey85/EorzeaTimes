@@ -1,5 +1,5 @@
 # Eorzea Time
 
-[![Azure Static Web Apps CI/CD](https://github.com/codemonkey85/EorzeaTimes/actions/workflows/azure-static-web-apps-proud-forest-0b216810f.yml/badge.svg)](https://github.com/codemonkey85/EorzeaTimes/actions/workflows/azure-static-web-apps-proud-forest-0b216810f.yml)
+[![Deploy to GitHub Pages](https://github.com/codemonkey85/EorzeaTimes/actions/workflows/main.yml/badge.svg)](https://github.com/codemonkey85/EorzeaTimes/actions/workflows/main.yml)
 
-Hosted on Azure: https://proud-forest-0b216810f.2.azurestaticapps.net/
+Deployed to GitHub Pages: [https://codemonkey85.github.io/EorzeaTimes/](https://codemonkey85.github.io/EorzeaTimes/)
