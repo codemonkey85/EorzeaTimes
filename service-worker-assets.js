@@ -5,7 +5,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-eEUevlkVfbmDKUS0DjAD\/s1oS3bzW0opfep8eOrJ+\/4=",
+      "hash": "sha256-I5GcueuAhBqjDY+ZuoNm+0t7UjR6MvDPsiNmkWlHdeM=",
       "url": "manifest.json"
     },
     {
@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-0QpBnsls1Ty96ED+YjXLE6pUrCgS14Lnv\/3Lfy2uUWc=",
+      "hash": "sha256-hgvx4QmFKH4BBXxdx60obSgNauVp3aUT9b61d\/Ce3uQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -45,15 +45,15 @@
       "url": "_framework\/dotnet.native.wasm"
     },
     {
-      "hash": "sha256-okgqpei5t3yyXtiDU6WX7\/WmNT0Ins5yOJkw+r4K7mk=",
+      "hash": "sha256-brucDdwyxpYZuhD0+EEtzhkZkJpjwrOQt2tUGQPHiFk=",
       "url": "_framework\/Eorzea.Rcl.wasm"
     },
     {
-      "hash": "sha256-gnwbcShim0bBPLzKvdfVf+pWcLuUgJsE0y4vI9Q7mKc=",
+      "hash": "sha256-dGzZCiXnXHQjwxkLfjlPp8GExdzei3fqhj\/sBC8cIbk=",
       "url": "_framework\/Eorzea.Shared.wasm"
     },
     {
-      "hash": "sha256-yk5pC35xhSi2mUf3NUC5UkfCyaUi+bzGws5mwm7K6Y8=",
+      "hash": "sha256-dQSVR5KaVBV3yVFqDCjD3m6MsQdse7fQ7WPh1Zgm\/NA=",
       "url": "_framework\/Eorzea.Wasm.wasm"
     },
     {
@@ -221,5 +221,5 @@
       "url": "_content\/Eorzea.Rcl\/icon-512.png"
     }
   ],
-  "version": "b\/HhQteo"
+  "version": "lfxIyBmP"
 };
