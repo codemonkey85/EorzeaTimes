@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Eorzea.Wasm",
   "resources": {
-    "hash": "sha256-YdZRrpj5k0bha7uJyw0S91/7kcgvRO1LTvmM8Y5C1BM=",
+    "hash": "sha256-DrlM+6OWpamoA3HhtsAl+97cKff9YQR1YOG8XBU7AmY=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.ayi1wfuxhp.js": "sha256-U3DDnyef6FaENP7eEENBJnl7qVe/jrGECjCx+aVDn8Q="
     },
@@ -17,9 +17,9 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "Eorzea.Rcl.wasm": "sha256-EMxSVv2CNlah3ZdfHoqz7J6KkGhtcUMDuB5TGAbw4VM=",
-      "Eorzea.Shared.wasm": "sha256-ge64z6gctaoZlFuX1vYU1wKtUfXV2JkxNVqqw145HA0=",
-      "Eorzea.Wasm.wasm": "sha256-7ou1qEqVkymZqaeDL+cWUAhX9sGkCkeGw29Pzk4GtzM=",
+      "Eorzea.Rcl.wasm": "sha256-okgqpei5t3yyXtiDU6WX7/WmNT0Ins5yOJkw+r4K7mk=",
+      "Eorzea.Shared.wasm": "sha256-gnwbcShim0bBPLzKvdfVf+pWcLuUgJsE0y4vI9Q7mKc=",
+      "Eorzea.Wasm.wasm": "sha256-yk5pC35xhSi2mUf3NUC5UkfCyaUi+bzGws5mwm7K6Y8=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-CeB0FGf6CsuqV69h/eyR2G++Mk+iG2L67plCz+6e/H0=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-hOLdOfhJ8yvRcyyJAPoPL1P7QN9FgV38ceN/joUQByo=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-W5efThPCHMJLz7pMbZQj6UcQ4z7JDXnUnJkah2ZgbZM=",
